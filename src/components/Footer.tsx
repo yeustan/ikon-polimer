@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const WHATSAPP_NUMBER = "905320680353";
@@ -11,9 +12,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 bg-accent rounded-lg flex items-center justify-center font-bold text-primary text-lg">
-                İP
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="İkon Polimer Logo"
+                width={36}
+                height={36}
+                className="h-9 w-9 rounded-lg object-contain"
+              />
               <span className="font-bold text-lg text-white">İKON POLİMER</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
