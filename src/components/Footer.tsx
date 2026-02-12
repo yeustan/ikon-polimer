@@ -11,14 +11,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-4">
+            <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/logo.png"
                 alt="İkon Polimer Logo"
-                width={160}
-                height={44}
-                className="h-11 w-auto object-contain brightness-0 invert"
+                width={36}
+                height={36}
+                className="h-9 w-9 rounded-lg object-contain"
               />
+              <span className="font-bold text-lg text-white">İKON POLİMER</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
               İkon Polimer Kimya Sanayi Ticaret Limited Şirketi
