@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -22,14 +21,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo / Company Name */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            <Image
-              src="/images/logo.png"
-              alt="İkon Polimer Logo"
-              width={160}
-              height={40}
-              className="h-10 w-auto"
-              priority
-            />
+            <div className="w-9 h-9 bg-accent rounded-lg flex items-center justify-center font-bold text-primary text-lg">
+              İP
+            </div>
+            <div className="leading-tight">
+              <span className="font-bold text-lg tracking-wide">İKON POLİMER</span>
+              <span className="hidden sm:block text-xs text-gray-300 font-normal">
+                Kimya Sanayi Ticaret
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
