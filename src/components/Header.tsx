@@ -25,17 +25,11 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="İkon Polimer Logo"
-              width={36}
-              height={36}
-              className="h-9 w-9 rounded-lg object-contain"
+              width={180}
+              height={48}
+              className="h-12 w-auto object-contain brightness-0 invert"
               priority
             />
-            <div className="leading-tight">
-              <span className="font-bold text-lg tracking-wide">İKON POLİMER</span>
-              <span className="hidden sm:block text-xs text-gray-300 font-normal">
-                Kimya Sanayi Ticaret
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
